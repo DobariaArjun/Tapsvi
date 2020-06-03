@@ -1,5 +1,4 @@
 const express = require('express');
-const SendOtp = require('sendotp');
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 var url = "mongodb+srv://ArjunDobaria:Pravin143@mantratechnolog-bjxu8.mongodb.net/test?retryWrites=true&w=majority";
