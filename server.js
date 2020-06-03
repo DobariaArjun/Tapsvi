@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 var url = "mongodb+srv://ArjunDobaria:Pravin143@mantratechnolog-bjxu8.mongodb.net/test?retryWrites=true&w=majority";
 const app = express()
-const port = process.env.PORT;
+const port = process.env.PORT || 2007;
 
 app.use(bodyParser.json())
 
