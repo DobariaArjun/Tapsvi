@@ -41,7 +41,8 @@ MongoClient.connect(url, {useUnifiedTopology: true}, (err, db) => {
                 if (err) {
                     throw err
                 } else {
-                    res.json({"status": 0, "message": "" + items})
+
+                    res.json({"status": 0, "message": "" + JSON.stringify(items)});
                 }
 
             })
@@ -51,6 +52,3 @@ MongoClient.connect(url, {useUnifiedTopology: true}, (err, db) => {
 
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
-
-
-// mongodb+srv://ArjunDobaria:<password>@mantratechnolog-bjxu8.mongodb.net/test?retryWrites=true&w=majority
