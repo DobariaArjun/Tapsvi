@@ -41,7 +41,7 @@ MongoClient.connect(url, {useUnifiedTopology: true}, (err, db) => {
                 if (err) {
                     throw err
                 } else {
-                    res.json({"status": 0, "message": "" + JSON.stringify(items)})
+                    res.json({"status": 0, "message": "" + items})
                 }
 
             })
